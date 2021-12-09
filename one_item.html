@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flowers</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style-media.css">
+  <link rel="stylesheet" href="assets/css/style-one-item.css">
+  <link href="http://fonts.cdnfonts.com/css/din-alternate" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="assets/js/plugins/jquery.zoom.js"></script>
+</head>
+<body>
+<header class="header">
+  <nav class="header__nav">
+    <a href="#" class="header__link" id="nav-link-pay"><span>Оплата</span></a>
+    <a href="#" class="header__link" id="nav-link-delivery"><span>Доставка</span></a>
+    <a href="#" class="header__link" id="nav-link-pickup"><span>Самовывоз</span></a>
+    <a href="#" class="header__link" id="nav-link-business"><span>Бизнесу</span></a>
+    <a href="#" class="header__link" id="nav-link-contacts"><span>Контакты</span></a>
+  </nav>
+  <div class="header__info">
+    <div class="header__address">
+      <div class="address-img-container">
+        <img src="assets/img/map.png" alt="maps" class="map">
+      </div>
+      <div class="address-text">
+        <span>Минск,</span> <span>22.10.2021</span>
+      </div>
+    </div>
+    <a href="/" class="header__logo">
+      <div class="logo-img-container">
+        <img class="header__logo-img" src="assets/img/logo.png" alt="logo">
+      </div>
+    </a>
+    <div class="header__container">
+      <div class="header__number">
+        <a type="tel">+375 29 813-17-61</a>
+      </div>
+      <div class="header__basket">
+        <div class="basket-title">
+          <span>Корзина</span>
+        </div>
+        <div class="basket-img-container">
+          <img class="header__bag-img" src="assets/img/bag.png" alt="bag">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header__nav2">
+    <div class="header__nav2-container">
+      <a href="/" class="header__nav2-link">Акции</a>
+      <a href="/" class="header__nav2-link">Скидки</a>
+      <a href="/" class="header__nav2-link">Подарки</a>
+      <a href="/" class="header__nav2-link">Розы</a>
+      <a href="/" class="header__nav2-link">Комплекты</a>
+    </div>
+    <form class="header__search" action="action_page.php">
+      <button type="submit" class="fa fa-search"></button>
+      <input type="text" placeholder="Поиск.." name="search">
+    </form>
+  </div>
+</header>
+<main class="main">
+  <div class="main__one_item_container">
+    <div class="one_item_info">
+      <div class="one_item_main_photo">
+        <img src="assets/img/3flower.png" alt="sorry" class="one_item_main_img">
+      </div>
+      <div class="one_item_info_container">
+        <div class="one_item_title">Букет из 21 розы КЕНИЯ</div>
+        <div class="one_item_price"> 65 руб</div>
+        <div class="one_item_counter_btn">
+          <button class="counter_btn_minus">-</button>
+          <button class="counter_btn_number">1 шт</button>
+          <button class="counter_btn_plus">+</button>
+        </div>
+        <div class="one_item_pay_btns">
+          <button class="checkout_btn">Оформить заказ</button>
+          <button class="checkout_one_click_btn">Купить в 1 клик</button>
+        </div>
+        <div class="one_item_info_questions">
+          <div class="one_item_info_self">
+            <div class="one_item_info_self_img_container">
+              <div class="fas fa-map-marker-alt"></div>
+            </div>
+            <div class="one_item_info_self_title">Самовывоз</div>
+            <div class="one_item_info_self_text">С 9:00 до 21:00</div>
+          </div>
+          <div class="one_item_info_delivery">
+            <div class="one_item_info_delivery_img_container">
+              <div class="fas fa-truck"></div>
+            </div>
+            <div class="one_item_info_self_title">Доставка</div>
+            <div class="one_item_info_self_text">Ближайшая доставка через 1-2 часа</div>
+          </div>
+          <div class="one_item_info_question">
+            <div class="one_item_info_question_img_container">
+              <div class="fas fa-comments"></div>
+            </div>
+            <div class="one_item_info_self_title">Остались вопросы?</div>
+            <div class="one_item_info_self_text">Ответим в чате  или по телефону 80(29)813-17-61</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="one_item_photos">
+      <div class="one_item_photo">
+        <img src="assets/img/3flower.png" alt="sorry" class="one_item_sub_img">
+      </div>
+      <div class="one_item_photo">
+        <img src="assets/img/3flower.png" alt="sorry" class="one_item_sub_img">
+      </div>
+      <div class="one_item_photo">
+        <img src="assets/img/3flower.png" alt="sorry" class="one_item_sub_img">
+      </div>
+      <div class="one_item_photo_arrow">→</div>
+    </div>
+  </div>
+  <div class="one_item_description_container">
+    <h3 class="product_description_title">Описание продукта</h3>
+    <div class="one_term">
+      <div class="one_term_title">О букете</div>
+      <ul class="one_term_text">
+        <li>Букет из 21 кеннийской розы, станет прекрасным подарком вашему любимому человеку!</li>
+        <li>Классические красные розы подойдуут для любого случая, будь то первое свидание или юбилей любимой тети.</li>
+        <li class="strong"><strong>Состав:</strong> 21 кеннийская роза (длина стебля 60 см); стильное оформление</li>
+        <li><strong>Размер:</strong> 65 на 45 см</li>
+      </ul>
+    </div>
+  </div>
+</main>

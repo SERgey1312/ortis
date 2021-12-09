@@ -1,0 +1,13 @@
+@import url('http://fonts.cdnfonts.com/css/din-alternate');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+@font-face {
+    font-family: DIN_Alternate_Bold; /* Имя шрифта */
+    src: url(fonts/DIN_Alternate_Bold.otf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: AvenirNext;
+    font-style: normal;
+    font-weight: normal;
+    src: url(fonts/AvenirNextLTPro-Regular.otf) format("truetype");
+}

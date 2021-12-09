@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowers</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style-media.css">
+    <link href="http://fonts.cdnfonts.com/css/din-alternate" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="assets/js/plugins/jquery.zoom.js"></script>
+</head>
+<body>
+<header class="header">
+    <nav class="header__nav">
+        <a href="#" class="header__link" id="nav-link-pay"><span>Оплата</span></a>
+        <a href="#" class="header__link" id="nav-link-delivery"><span>Доставка</span></a>
+        <a href="#" class="header__link" id="nav-link-pickup"><span>Самовывоз</span></a>
+        <a href="#" class="header__link" id="nav-link-business"><span>Бизнесу</span></a>
+        <a href="#" class="header__link" id="nav-link-contacts"><span>Контакты</span></a>
+    </nav>
+    <div class="header__info">
+        <div class="header__address">
+            <div class="address-img-container">
+                <img src="assets/img/map.png" alt="maps" class="map">
+            </div>
+            <div class="address-text">
+                <span>Минск,</span> <span>22.10.2021</span>
+            </div>
+        </div>
+        <a href="/" class="header__logo">
+            <div class="logo-img-container">
+                <img class="header__logo-img" src="assets/img/logo.png" alt="logo">
+            </div>
+        </a>
+        <div class="header__container">
+            <div class="header__number">
+                <a type="tel">+375 29 813-17-61</a>
+            </div>
+            <div class="header__basket" id="checkout">
+                <div class="basket-title">
+                    <span>Корзина</span>
+                </div>
+                <div class="basket-img-container">
+                    <img class="header__bag-img" src="assets/img/bag.png" alt="bag">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header__nav2">
+        <div class="header__nav2-container">
+            <a href="/" class="header__nav2-link">Акции</a>
+            <a href="/" class="header__nav2-link">Скидки</a>
+            <a href="/" class="header__nav2-link">Подарки</a>
+            <a href="/" class="header__nav2-link">Розы</a>
+            <a href="/" class="header__nav2-link">Комплекты</a>
+        </div>
+        <form class="header__search" action="action_page.php">
+            <button type="submit" class="fa fa-search"></button>
+            <input type="text" placeholder="Поиск.." name="search">
+        </form>
+    </div>
+</header>
+<main class="main">
+    <div class="main__container">
+        <div class="main__all-flowers">
+            <div class="main__all-flowers-img-container">
+                <img src="assets/img/all_flowers.png" alt="all-flowers" class="main__all-flowers-img" >
+                <div class="main__all-flowers-title-container">
+                    <div class="title-container" id="all_flowers_title">
+                        <a href="#" class="flower_category_link">ВСЕ ЦВЕТЫ</a>
+                    </div>
+                    <div class="title-container" id="do_50_rub_title">
+                        <a href="#" class="flower_category_link">До 50 руб</a>
+                    </div>
+                    <div class="title-container">
+                        <a href="#" class="flower_category_link">От 50 - 100 руб</a>
+                    </div>
+                    <div class="title-container">
+                        <a href="#" class="flower_category_link">От 100 - 200 руб</a>
+                    </div>
+                    <div class="title-container">
+                        <a href="#" class="flower_category_link">Эксклюзив</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main__flowers-categories">
+            <div class="main__flower-container">
+                <a href="#" class="main__flower-container-link"></a>
+                <img src="assets/img/1flower.png" alt="flower" class="main__flower-img" id="main__flower-img_first">
+                <div class="main__flower-title-container" id="flover1">
+                    <div class="title-container">
+                        <a href="#" class="flower_category_link">БУКЕТЫ ИЗ РОМАШЕК</a>
+                    </div>
+                </div>
+            </div>
+            <div class="main__flower-container">
+                <a href="#" class="main__flower-container-link"></a>
+                <img src="assets/img/2flower.png" alt="flower" class="main__flower-img">
+                <div class="main__flower-title-container" id="flover2">
+                    <div class="title-container">
+                        <a href="#" class="flower_category_link">АВТОРСКИЕ БУКЕТЫ</a>
+                    </div>
+                </div>
+            </div>
+            <div class="main__flower-container">
+                <a href="#" class="main__flower-container-link"></a>
+                <img src="assets/img/3flower.png" alt="flower" class="main__flower-img">
+                <div class="main__flower-title-container" id="flover3">
+                    <div class="title-container">
+                        <a href="#" class="flower_category_link">БУКЕТЫ ИЗ РОЗ</a>
+                    </div>
+                </div>
+            </div>
+            <div class="main__flower-container">
+                <a href="#" class="main__flower-container-link"></a>
+                <img src="assets/img/4flower.png" alt="flower" class="main__flower-img">
+                <div class="main__flower-title-container" id="flover4">
+                    <div class="title-container">
+                        <a href="#" class="flower_category_link">ПОДАРКИ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="goods_container">
+        <div class="one_good_container">
+            <div class="one_good_container_title">
+                <h3 class="one_good_title">Акции недели </h3>
+                <a href="/" class="see_all">Смотреть все</a>
+            </div>
+            <div class="one_good_options">
+                <div class="one_good">
+                    <div class="one_good_img_container">
+                        <img src="assets/img/rose1.png" class="one_good_img" alt="one-good">
+                    </div>
+                    <div class="one_good_description">
+                        <div class="one_good_title_content">
+                            <div class="one_good_name">
+                                <span>Букет из 13 эквадорских роз</span>
+                            </div>
+                            <div class="one_good_price">
+                                <span>90 руб</span>
+                            </div>
+                        </div>
+                        <div class="one_good_btn_container">
+                            <div class="one_good_btn">
+                                <a href="#" class="pay_btn" data-id="111">В корзину</a>
+                            </div>
+                            <div class="one_good_like">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="one_good">
+                    <div class="one_good_img_container">
+                        <img src="assets/img/rose2.png" class="one_good_img" alt="one-good">
+                    </div>
+                    <div class="one_good_description">
+                        <div class="one_good_title_content">
+                            <div class="one_good_name">
+                                <span>Букет из 11 роз</span>
+                            </div>
+                            <div class="one_good_price">
+                                <span>50 руб</span>
+                            </div>
+                        </div>
+                        <div class="one_good_btn_container">
+                            <div class="one_good_btn">
+                                <a href="#" class="pay_btn">В корзину</a>
+                            </div>
+                            <div class="one_good_like">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="one_good">
+                    <div class="one_good_img_container">
+                        <img src="assets/img/rose3.png" class="one_good_img" alt="one-good">
+                    </div>
+                    <div class="one_good_description">
+                        <div class="one_good_title_content">
+                            <div class="one_good_name">
+                                <span>Букет из 11 роз</span>
+                            </div>
+                            <div class="one_good_price">
+                                <span>60 руб</span>
+                            </div>
+                        </div>
+                        <div class="one_good_btn_container">
+                            <div class="one_good_btn">
+                                <a href="#" class="pay_btn">В корзину</a>
+                            </div>
+                            <div class="one_good_like">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="one_good">
+                    <div class="one_good_img_container">
+                        <img src="assets/img/rose2.png" class="one_good_img" alt="one-good">
+                    </div>
+                    <div class="one_good_description">
+                        <div class="one_good_title_content">
+                            <div class="one_good_name">
+                                <span>Букет из 11 роз</span>
+                            </div>
+                            <div class="one_good_price">
+                                <span>40 руб</span>
+                            </div>
+                        </div>
+                        <div class="one_good_btn_container">
+                            <div class="one_good_btn">
+                                <a href="#" class="pay_btn">В корзину</a>
+                            </div>
+                            <div class="one_good_like">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="see_all_bottom">
+                <a href="/" class="see_all_bottom_link">Показать еще 10 шт</a>
+            </div>
+        </div>
+        <div class="one_good_container">
+            <div class="one_good_container_title">
+                <h3 class="one_good_title">Букеты из роз</h3>
+                <a href="/" class="see_all">Смотреть все</a>
+            </div>
+            <div class="one_good_options">
+                <div class="one_good">
+                    <div class="one_good_img_container">
+                        <img src="assets/img/25rose_ekvador.HEIC" class="one_good_img" alt="one-good">
+                    </div>
+                    <div class="one_good_description">
+                        <div class="one_good_title_content">
+                            <div class="one_good_name">
+                                <span>Букет из 25 эквадорских роз</span>
+                            </div>
+                            <div class="one_good_price">
+                                <span>90 руб</span>
+                            </div>
+                        </div>
+                        <div class="one_good_btn_container">
+                            <div class="one_good_btn">
+                                <a href="#" class="pay_btn">В корзину</a>
+                            </div>
+                            <div class="one_good_like">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="one_good">
+                    <div class="one_good_img_container">
+                        <img src="assets/img/21rose_ekvador.JPG" class="one_good_img" alt="one-good">
+                    </div>
+                    <div class="one_good_description">
+                        <div class="one_good_title_content">
+                            <div class="one_good_name">
+                                <span>Букет из 21 эквадорских роз</span>
+                            </div>
+                            <div class="one_good_price">
+                                <span>50 руб</span>
+                            </div>
+                        </div>
+                        <div class="one_good_btn_container">
+                            <div class="one_good_btn">
+                                <a href="#" class="pay_btn">В корзину</a>
+                            </div>
+                            <div class="one_good_like">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="one_good">
+                    <div class="one_good_img_container">
+                        <img src="assets/img/15rose_ekvador.jpg" class="one_good_img" alt="one-good">
+                    </div>
+                    <div class="one_good_description">
+                        <div class="one_good_title_content">
+                            <div class="one_good_name">
+                                <span>Букет из 15 эквадорских роз</span>
+                            </div>
+                            <div class="one_good_price">
+                                <span>60 руб</span>
+                            </div>
+                        </div>
+                        <div class="one_good_btn_container">
+                            <div class="one_good_btn">
+                                <a href="#" class="pay_btn">В корзину</a>
+                            </div>
+                            <div class="one_good_like">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="one_good">
+                    <div class="one_good_img_container">
+                        <img src="assets/img/21rose_kenia.jpg" class="one_good_img" alt="one-good">
+                    </div>
+                    <div class="one_good_description">
+                        <div class="one_good_title_content">
+                            <div class="one_good_name">
+                                <span>Букет из 21 кеннийской розы</span>
+                            </div>
+                            <div class="one_good_price">
+                                <span>40 руб</span>
+                            </div>
+                        </div>
+                        <div class="one_good_btn_container">
+                            <div class="one_good_btn">
+                                <a href="#" class="pay_btn">В корзину</a>
+                            </div>
+                            <div class="one_good_like">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="see_all_bottom">
+                <a href="/" class="see_all_bottom_link">Показать еще 10 шт</a>
+            </div>
+        </div>
+        <div class="one_good_container">
+            <div class="one_good_container_title">
+                <h3 class="one_good_title">Букеты из ромашек </h3>
+                <a href="/" class="see_all">Смотреть все</a>
+            </div>
+            <div class="one_good_options">
+                <div class="one_good">
+                    <div class="one_good_img_container">
+                        <img src="assets/img/r1.jpg" class="one_good_img" alt="one-good">
+                    </div>
+                    <div class="one_good_description">
+                        <div class="one_good_title_content">
+                            <div class="one_good_name">
+                                <span>Букет из 20 белых ромашек</span>
+                            </div>
+                            <div class="one_good_price">
+                                <span>30 руб</span>
+                            </div>
+                        </div>
+                        <div class="one_good_btn_container">
+                            <div class="one_good_btn">
+                                <a href="#" class="pay_btn">В корзину</a>
+                            </div>
+                            <div class="one_good_like">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="one_good">
+                    <div class="one_good_img_container">
+                        <img src="assets/img/r2.jpg" class="one_good_img" alt="one-good">
+                    </div>
+                    <div class="one_good_description">
+                        <div class="one_good_title_content">
+                            <div class="one_good_name">
+                                <span>Букет из 15 ромашек</span>
+                            </div>
+                            <div class="one_good_price">
+                                <span>25 руб</span>
+                            </div>
+                        </div>
+                        <div class="one_good_btn_container">
+                            <div class="one_good_btn">
+                                <a href="#" class="pay_btn">В корзину</a>
+                            </div>
+                            <div class="one_good_like">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="one_good">
+                    <div class="one_good_img_container">
+                        <img src="assets/img/r3.jpg" class="one_good_img" alt="one-good">
+                    </div>
+                    <div class="one_good_description">
+                        <div class="one_good_title_content">
+                            <div class="one_good_name">
+                                <span>Букет из красивых ромашек</span>
+                            </div>
+                            <div class="one_good_price">
+                                <span>60 руб</span>
+                            </div>
+                        </div>
+                        <div class="one_good_btn_container">
+                            <div class="one_good_btn">
+                                <a href="#" class="pay_btn">В корзину</a>
+                            </div>
+                            <div class="one_good_like">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="one_good">
+                    <div class="one_good_img_container">
+                        <img src="assets/img/r4.jpg" class="one_good_img" alt="one-good">
+                    </div>
+                    <div class="one_good_description">
+                        <div class="one_good_title_content">
+                            <div class="one_good_name">
+                                <span>Букет из 30 ромашек</span>
+                            </div>
+                            <div class="one_good_price">
+                                <span>40 руб</span>
+                            </div>
+                        </div>
+                        <div class="one_good_btn_container">
+                            <div class="one_good_btn">
+                                <a href="#" class="pay_btn">В корзину</a>
+                            </div>
+                            <div class="one_good_like">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="see_all_bottom">
+                <a href="/" class="see_all_bottom_link">Показать еще 10 шт</a>
+            </div>
+        </div>
+        <div class="one_good_container">
+            <div class="one_good_container_title">
+                <h3 class="one_good_title">Сборные букеты </h3>
+                <a href="/" class="see_all">Смотреть все</a>
+            </div>
+            <div class="one_good_options">
+                <div class="one_good">
+                    <div class="one_good_img_container">
+                        <img src="assets/img/rose1.png" class="one_good_img" alt="one-good">
+                    </div>
+                    <div class="one_good_description">
+                        <div class="one_good_title_content">
+                            <div class="one_good_name">
+                                <span>Букет из 13 эквадорских роз</span>
+                            </div>
+                            <div class="one_good_price">
+                                <span>90 руб</span>
+                            </div>
+                        </div>
+                        <div class="one_good_btn_container">
+                            <div class="one_good_btn">
+                                <a href="#" class="pay_btn">В корзину</a>
+                            </div>
+                            <div class="one_good_like">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="one_good">
+                    <div class="one_good_img_container">
+                        <img src="assets/img/rose2.png" class="one_good_img" alt="one-good">
+                    </div>
+                    <div class="one_good_description">
+                        <div class="one_good_title_content">
+                            <div class="one_good_name">
+                                <span>Букет из 11 роз</span>
+                            </div>
+                            <div class="one_good_price">
+                                <span>50 руб</span>
+                            </div>
+                        </div>
+                        <div class="one_good_btn_container">
+                            <div class="one_good_btn">
+                                <a href="#" class="pay_btn">В корзину</a>
+                            </div>
+                            <div class="one_good_like">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="one_good">
+                    <div class="one_good_img_container">
+                        <img src="assets/img/rose3.png" class="one_good_img" alt="one-good">
+                    </div>
+                    <div class="one_good_description">
+                        <div class="one_good_title_content">
+                            <div class="one_good_name">
+                                <span>Букет из 11 роз</span>
+                            </div>
+                            <div class="one_good_price">
+                                <span>60 руб</span>
+                            </div>
+                        </div>
+                        <div class="one_good_btn_container">
+                            <div class="one_good_btn">
+                                <a href="#" class="pay_btn">В корзину</a>
+                            </div>
+                            <div class="one_good_like">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="one_good">
+                    <div class="one_good_img_container">
+                        <img src="assets/img/rose2.png" class="one_good_img" alt="one-good">
+                    </div>
+                    <div class="one_good_description">
+                        <div class="one_good_title_content">
+                            <div class="one_good_name">
+                                <span>Букет из 11 роз</span>
+                            </div>
+                            <div class="one_good_price">
+                                <span>40 руб</span>
+                            </div>
+                        </div>
+                        <div class="one_good_btn_container">
+                            <div class="one_good_btn">
+                                <a href="#" class="pay_btn">В корзину</a>
+                            </div>
+                            <div class="one_good_like">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="see_all_bottom">
+                <a href="/" class="see_all_bottom_link">Показать еще 10 шт</a>
+            </div>
+        </div>
+        <div class="one_good_container">
+            <div class="one_good_container_title">
+                <h3 class="one_good_title">Игрушки </h3>
+                <a href="/" class="see_all">Смотреть все</a>
+            </div>
+            <div class="one_good_options">
+                <div class="one_good">
+                    <div class="one_good_img_container">
+                        <img src="assets/img/rose1.png" class="one_good_img" alt="one-good">
+                    </div>
+                    <div class="one_good_description">
+                        <div class="one_good_title_content">
+                            <div class="one_good_name">
+                                <span>Букет из 13 эквадорских роз</span>
+                            </div>
+                            <div class="one_good_price">
+                                <span>90 руб</span>
+                            </div>
+                        </div>
+                        <div class="one_good_btn_container">
+                            <div class="one_good_btn">
+                                <a href="#" class="pay_btn">В корзину</a>
+                            </div>
+                            <div class="one_good_like">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="one_good">
+                    <div class="one_good_img_container">
+                        <img src="assets/img/rose2.png" class="one_good_img" alt="one-good">
+                    </div>
+                    <div class="one_good_description">
+                        <div class="one_good_title_content">
+                            <div class="one_good_name">
+                                <span>Букет из 11 роз</span>
+                            </div>
+                            <div class="one_good_price">
+                                <span>50 руб</span>
+                            </div>
+                        </div>
+                        <div class="one_good_btn_container">
+                            <div class="one_good_btn">
+                                <a href="#" class="pay_btn">В корзину</a>
+                            </div>
+                            <div class="one_good_like">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="one_good">
+                    <div class="one_good_img_container">
+                        <img src="assets/img/rose3.png" class="one_good_img" alt="one-good">
+                    </div>
+                    <div class="one_good_description">
+                        <div class="one_good_title_content">
+                            <div class="one_good_name">
+                                <span>Букет из 11 роз</span>
+                            </div>
+                            <div class="one_good_price">
+                                <span>60 руб</span>
+                            </div>
+                        </div>
+                        <div class="one_good_btn_container">
+                            <div class="one_good_btn">
+                                <a href="#" class="pay_btn">В корзину</a>
+                            </div>
+                            <div class="one_good_like">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="one_good">
+                    <div class="one_good_img_container">
+                        <img src="assets/img/rose2.png" class="one_good_img" alt="one-good">
+                    </div>
+                    <div class="one_good_description">
+                        <div class="one_good_title_content">
+                            <div class="one_good_name">
+                                <span>Букет из 11 роз</span>
+                            </div>
+                            <div class="one_good_price">
+                                <span>40 руб</span>
+                            </div>
+                        </div>
+                        <div class="one_good_btn_container">
+                            <div class="one_good_btn">
+                                <a href="#" class="pay_btn">В корзину</a>
+                            </div>
+                            <div class="one_good_like">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="see_all_bottom">
+                <a href="/" class="see_all_bottom_link">Показать еще 10 шт</a>
+            </div>
+        </div>
+        <div class="one_good_container">
+            <div class="one_good_container_title">
+                <h3 class="one_good_title">Открытки </h3>
+                <a href="/" class="see_all">Смотреть все</a>
+            </div>
+            <div class="one_good_options">
+                <div class="one_good">
+                    <div class="one_good_img_container">
+                        <img src="assets/img/rose1.png" class="one_good_img" alt="one-good">
+                    </div>
+                    <div class="one_good_description">
+                        <div class="one_good_title_content">
+                            <div class="one_good_name">
+                                <span>Букет из 13 эквадорских роз</span>
+                            </div>
+                            <div class="one_good_price">
+                                <span>90 руб</span>
+                            </div>
+                        </div>
+                        <div class="one_good_btn_container">
+                            <div class="one_good_btn">
+                                <a href="#" class="pay_btn">В корзину</a>
+                            </div>
+                            <div class="one_good_like">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="one_good">
+                    <div class="one_good_img_container">
+                        <img src="assets/img/rose2.png" class="one_good_img" alt="one-good">
+                    </div>
+                    <div class="one_good_description">
+                        <div class="one_good_title_content">
+                            <div class="one_good_name">
+                                <span>Букет из 11 роз</span>
+                            </div>
+                            <div class="one_good_price">
+                                <span>50 руб</span>
+                            </div>
+                        </div>
+                        <div class="one_good_btn_container">
+                            <div class="one_good_btn">
+                                <a href="#" class="pay_btn">В корзину</a>
+                            </div>
+                            <div class="one_good_like">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="one_good">
+                    <div class="one_good_img_container">
+                        <img src="assets/img/rose3.png" class="one_good_img" alt="one-good">
+                    </div>
+                    <div class="one_good_description">
+                        <div class="one_good_title_content">
+                            <div class="one_good_name">
+                                <span>Букет из 11 роз</span>
+                            </div>
+                            <div class="one_good_price">
+                                <span>60 руб</span>
+                            </div>
+                        </div>
+                        <div class="one_good_btn_container">
+                            <div class="one_good_btn">
+                                <a href="#" class="pay_btn">В корзину</a>
+                            </div>
+                            <div class="one_good_like">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="one_good">
+                    <div class="one_good_img_container">
+                        <img src="assets/img/rose2.png" class="one_good_img" alt="one-good">
+                    </div>
+                    <div class="one_good_description">
+                        <div class="one_good_title_content">
+                            <div class="one_good_name">
+                                <span>Букет из 11 роз</span>
+                            </div>
+                            <div class="one_good_price">
+                                <span>40 руб</span>
+                            </div>
+                        </div>
+                        <div class="one_good_btn_container">
+                            <div class="one_good_btn">
+                                <a href="#" class="pay_btn">В корзину</a>
+                            </div>
+                            <div class="one_good_like">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="see_all_bottom">
+                <a href="/" class="see_all_bottom_link">Показать еще 10 шт</a>
+            </div>
+        </div>
+    </div>
+    <div class="advantage">
+        <div class="main__img-container">
+            <img class="main__img" src="assets/img/pasha.png" alt="sorry">
+        </div>
+        <div class="advantage_info">
+            <div class="advantage_info_block">
+                <div>
+                    <h3 class="advantage_title">Контроль заказа перед доставкой</h3>
+                    <div>
+                        <div class="advantage_info_point">
+                            <div class="advantage_info_point_num">1</div>
+                            <div class="advantage_info_point_txt">Перед доставкой оператор отправит фото заказа для согласования через мессенджеры или email.</div>
+                        </div>
+                        <div class="advantage_info_point">
+                            <div class="advantage_info_point_num">2</div>
+                            <div class="advantage_info_point_txt">Вы утверждаете либо вносите изменения.</div>
+                        </div>
+                        <div class="advantage_info_point">
+                            <div class="advantage_info_point_num">3</div>
+                            <div class="advantage_info_point_txt">Заказ передается в службу доставки.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main__img-container-phone">
+                <img class="main__phone-img" src="assets/img/phone.png" alt="sorry">
+            </div>
+        </div>
+    </div>
+    <div class="delivery_terms">
+        <div class="delivery_terms_container">
+            <div class="one_term">
+                <div class="one_term_title">Условия доставки</div>
+                <ul class="one_term_text">
+                    <li>Доставка осуществляется день в день.</li>
+                    <li>Если стоимость букета ниже 35 рублей - забрать можно только самовывозом.</li>
+                    <li>Минимальное время доставки после оформления заказа - 1 час.</li>
+                </ul>
+            </div>
+            <div class="one_term">
+                <div class="one_term_title">Зоны доставки</div>
+                <ul class="one_term_text">
+                    <li>Фрунзенский район - <span>3 руб</span></li>
+                    <li>Внутри МКАД - <span>7 руб</span></li>
+                    <li>За пределами МКАД до 5 км - <span>10 руб</span></li>
+                    <li>За пределами МКАД после 5 км - <span>1 руб за км.</span></li>
+                    <li>При заказе от 100 рублей - <span>бесплатно</span></li>
+                </ul>
+            </div>
+            <div class="one_term">
+                <div class="one_term_title">Интервалы доставки</div>
+                <ul class="one_term_text">
+                    <li>Мы можем доставить к точному времени, либо в выбранном интервале времени.</li>
+                    <li>В праздничные дни интервал может быть увеличен, менеджер заранее  предупредит Вас об этом.</li>
+                </ul>
+            </div>
+            <div class="one_term">
+                <div class="one_term_title">Основные</div>
+                <ul class="one_term_text">
+                    <li>Телефон для заказа или уточнения информации: 80(29)813-17-61</li>
+                    <li>Email: <span>fvfirm@yandex.ru</span></li>
+                </ul>
+            </div>
+            <div class="one_term">
+                <div class="one_term_title">Мессенджеры</div>
+                <div class="messenger_container">
+                    <div class="messenger_img_container">
+                        <a href="/telega" class="messenger_link" target="_blank">
+                            <img src="assets/img/tg.png" alt="sorry" class="messenger_img">
+                        </a>
+                    </div>
+                    <div class="messenger_img_container">
+                        <a href="/whatsup" class="messenger_link" target="_blank">
+                            <img src="assets/img/wh.png" alt="sorry" class="messenger_img">
+                        </a>
+                    </div>
+                    <div class="messenger_img_container">
+                        <a href="/viber" class="messenger_link" target="_blank">
+                            <img src="assets/img/vb.png" alt="sorry" class="messenger_img">
+                        </a>
+                    </div>
+                    <div class="messenger_img_container">
+                        <a href="/hz" class="messenger_link" target="_blank">
+                            <img src="assets/img/hz.png" alt="sorry" class="messenger_img">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="one_term">
+                <div class="one_term_title">Режим работы</div>
+                <ul class="one_term_text">
+                    <li>Режим работы магазина: ежедневно с 9:00 до 21:00</li>
+                </ul>
+            </div>
+            <div class="one_term">
+                <div class="one_term_title">Юридическое лицо</div>
+                <ul class="one_term_text">
+                    <li>ЧТУП "Эффектпартнер"</li>
+                    <li>Юридический адрес: 222410, г. Вилейка, ул. 17 сентября, д. 29, ком. 6<li>
+                    <li>УНП 691182658<li>
+                </ul>
+            </div>
+            <div class="one_term">
+                <div class="one_term_title">Корпоративным клиентам</div>
+                <ul class="one_term_text">
+                    <li>Букеты на дни рождения и праздники для сотрудников и партнеров.</li>
+                    <li>Оформление композициями из живых цветов кабинета руководителя, переговорных, бутиков, ресторанов, отелей и др.<li>
+                    <li>Возможно брендирование.<li>
+                </ul>
+            </div>
+            <div class="one_term">
+                <div class="one_term_title">Подписки</div>
+                <ul class="one_term_text">
+                    <li>Выгодные условия при покупке подписки на цветы 3/6/12 месяцев.</li>
+                </ul>
+            </div>
+            <div class="one_term">
+                <div class="one_term_title">Адрес</div>
+                <ul class="one_term_text">
+                    <li>г. Минск, ул. Лобанка 81, вывеска цветы и подарки</li>
+                </ul>
+            </div>
+            <div class="one_term">
+                <div class="one_term_title">Время работы</div>
+                <ul class="one_term_text">
+                    <li>Ежедневно с 9:00 до 21:00</li>
+                </ul>
+            </div>
+            <div class="one_term">
+                <div class="one_term_title">Преимущества</div>
+                <ul class="one_term_text">
+                    <li>Флорист всегда поможет выбрать букет и оформить заказ выгодно.</li>
+                    <li>Большой ассортимент в наличии, вы сможеет сами выбирать каждый цветок для своего букета.<li>
+                    <li>Недалеко от станции метро "Каменная горка".<li>
+                </ul>
+            </div>
+            <div class="one_term">
+                <div class="one_term_title">Способы оплаты</div>
+                <ul class="one_term_text">
+                    <li>+ Наличными</li>
+                    <li>+ Банковской картой<li>
+                    <li>+ ЕРИП<li>
+                    <li>+ Apple Pay<li>
+                    <li>+ Счет для юридического лица<li>
+                    <li>+ Оплати<li>
+                    <li>
+                        <div class="pay_img_container">
+                            <img src="assets/img/pay.png" alt="sorry" class="pay_img">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="one_term">
+                <div class="one_term_title">Безопасность</div>
+                <ul class="one_term_text">
+                    <li>Для защиты данных покупателя используется шифрование на транспортном уровне - <span>TLS 1.2</span> и на прикладном уровне алгоритм <span>RSA</span> с длиной ключа 2048 бит.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+</footer>
+<div id="cart_content">
+
+</div>
+<script>
+    $( document ).ready(function() {
+        $('.one_good_img_container').zoom({
+            magnify: 1.1
+        });
+    });
+</script>
+<script src="assets/js/card.js"></script>
+</body>
+</html>
