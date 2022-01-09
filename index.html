@@ -14,11 +14,10 @@
 <body>
 <header class="header">
     <nav class="header__nav">
-        <a href="#" class="header__link" id="nav-link-pay"><span>Оплата</span></a>
-        <a href="#" class="header__link" id="nav-link-delivery"><span>Доставка</span></a>
-        <a href="#" class="header__link" id="nav-link-pickup"><span>Самовывоз</span></a>
-        <a href="#" class="header__link" id="nav-link-business"><span>Бизнесу</span></a>
-        <a href="#" class="header__link" id="nav-link-contacts"><span>Контакты</span></a>
+        <a href="#payment_methods" class="header__link" id="nav-link-pay"><span>Оплата</span></a>
+        <a href="#delivery_option" class="header__link" id="nav-link-delivery"><span>Доставка</span></a>
+        <a href="#self_delivery" class="header__link" id="nav-link-pickup"><span>Самовывоз</span></a>
+        <a href="#contacts_main" class="header__link" id="nav-link-contacts"><span>Контакты</span></a>
     </nav>
     <div class="header__info">
         <div class="header__address">
@@ -50,11 +49,13 @@
     </div>
     <div class="header__nav2">
         <div class="header__nav2-container">
-            <a href="/" class="header__nav2-link">Акции</a>
-            <a href="/" class="header__nav2-link">Скидки</a>
-            <a href="/" class="header__nav2-link">Подарки</a>
-            <a href="/" class="header__nav2-link">Розы</a>
-            <a href="/" class="header__nav2-link">Комплекты</a>
+            <a href="#stock" class="header__nav2-link">Акции</a>
+            <a href="#gifts" class="header__nav2-link">Подарки</a>
+            <a href="#roses" class="header__nav2-link">Розы</a>
+            <a href="#custom_flowers" class="header__nav2-link">Авторские букеты</a>
+            <a href="#chamomile" class="header__nav2-link">Ромашки</a>
+            <a href="#toys" class="header__nav2-link">Игрушки</a>
+            <a href="#postcards" class="header__nav2-link">Открытки</a>
         </div>
         <form class="header__search" action="action_page.php">
             <button type="submit" class="fa fa-search"></button>
@@ -92,7 +93,7 @@
                 <img src="assets/img/1flower.png" alt="flower" class="main__flower-img" id="main__flower-img_first">
                 <div class="main__flower-title-container" id="flover1">
                     <div class="title-container">
-                        <a href="#" class="flower_category_link">БУКЕТЫ ИЗ РОМАШЕК</a>
+                        <a href="#chamomile" class="flower_category_link">БУКЕТЫ ИЗ РОМАШЕК</a>
                     </div>
                 </div>
             </div>
@@ -101,7 +102,7 @@
                 <img src="assets/img/2flower.png" alt="flower" class="main__flower-img" id="main__flower-img_second">
                 <div class="main__flower-title-container" id="flover2">
                     <div class="title-container">
-                        <a href="#" class="flower_category_link">АВТОРСКИЕ БУКЕТЫ</a>
+                        <a href="#custom_flowers" class="flower_category_link">АВТОРСКИЕ БУКЕТЫ</a>
                     </div>
                 </div>
             </div>
@@ -110,7 +111,7 @@
                 <img src="assets/img/3flower.png" alt="flower" class="main__flower-img" id="main__flower-img_third">
                 <div class="main__flower-title-container" id="flover3">
                     <div class="title-container">
-                        <a href="#" class="flower_category_link">БУКЕТЫ ИЗ РОЗ</a>
+                        <a href="#roses" class="flower_category_link">БУКЕТЫ ИЗ РОЗ</a>
                     </div>
                 </div>
             </div>
@@ -119,7 +120,7 @@
                 <img src="assets/img/4flower.png" alt="flower" class="main__flower-img" id="main__flower-img_fourth">
                 <div class="main__flower-title-container" id="flover4">
                     <div class="title-container">
-                        <a href="#" class="flower_category_link">ПОДАРКИ</a>
+                        <a href="#gifts" class="flower_category_link">ПОДАРКИ</a>
                     </div>
                 </div>
             </div>
@@ -128,7 +129,7 @@
     <div class="goods_container">
         <div class="one_good_container">
             <div class="one_good_container_title">
-                <h3 class="one_good_title">Акции недели </h3>
+                <h3 class="one_good_title"><a name="stock"></a>Акции недели</h3>
                 <a href="/" class="see_all">Смотреть все</a>
             </div>
             <div class="one_good_options">
@@ -231,7 +232,7 @@
         </div>
         <div class="one_good_container">
             <div class="one_good_container_title">
-                <h3 class="one_good_title">Букеты из роз</h3>
+                <h3 class="one_good_title"><a name="roses"></a>Букеты из роз</h3>
                 <a href="/" class="see_all">Смотреть все</a>
             </div>
             <div class="one_good_options">
@@ -334,7 +335,7 @@
         </div>
         <div class="one_good_container">
             <div class="one_good_container_title">
-                <h3 class="one_good_title">Букеты из ромашек </h3>
+                <h3 class="one_good_title"><a name="chamomile"></a> Букеты из ромашек </h3>
                 <a href="/" class="see_all">Смотреть все</a>
             </div>
             <div class="one_good_options">
@@ -437,7 +438,110 @@
         </div>
         <div class="one_good_container">
             <div class="one_good_container_title">
-                <h3 class="one_good_title">Сборные букеты </h3>
+                <h3 class="one_good_title"><a name="gifts"></a> Подарки </h3>
+                <a href="/" class="see_all">Смотреть все</a>
+            </div>
+            <div class="one_good_options">
+                <div class="one_good">
+                    <div class="one_good_img_container">
+                        <img src="assets/img/rose1.png" class="one_good_img" alt="one-good">
+                    </div>
+                    <div class="one_good_description">
+                        <div class="one_good_title_content">
+                            <div class="one_good_name">
+                                <span>Подарок 1</span>
+                            </div>
+                            <div class="one_good_price">
+                                <span>90 руб</span>
+                            </div>
+                        </div>
+                        <div class="one_good_btn_container">
+                            <div class="one_good_btn">
+                                <a href="#" class="pay_btn">В корзину</a>
+                            </div>
+                            <div class="one_good_like">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="one_good">
+                    <div class="one_good_img_container">
+                        <img src="assets/img/rose2.png" class="one_good_img" alt="one-good">
+                    </div>
+                    <div class="one_good_description">
+                        <div class="one_good_title_content">
+                            <div class="one_good_name">
+                                <span>Подарок 2</span>
+                            </div>
+                            <div class="one_good_price">
+                                <span>50 руб</span>
+                            </div>
+                        </div>
+                        <div class="one_good_btn_container">
+                            <div class="one_good_btn">
+                                <a href="#" class="pay_btn">В корзину</a>
+                            </div>
+                            <div class="one_good_like">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="one_good">
+                    <div class="one_good_img_container">
+                        <img src="assets/img/rose3.png" class="one_good_img" alt="one-good">
+                    </div>
+                    <div class="one_good_description">
+                        <div class="one_good_title_content">
+                            <div class="one_good_name">
+                                <span>Подарок 3</span>
+                            </div>
+                            <div class="one_good_price">
+                                <span>60 руб</span>
+                            </div>
+                        </div>
+                        <div class="one_good_btn_container">
+                            <div class="one_good_btn">
+                                <a href="#" class="pay_btn">В корзину</a>
+                            </div>
+                            <div class="one_good_like">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="one_good">
+                    <div class="one_good_img_container">
+                        <img src="assets/img/rose2.png" class="one_good_img" alt="one-good">
+                    </div>
+                    <div class="one_good_description">
+                        <div class="one_good_title_content">
+                            <div class="one_good_name">
+                                <span>Подарок 4</span>
+                            </div>
+                            <div class="one_good_price">
+                                <span>40 руб</span>
+                            </div>
+                        </div>
+                        <div class="one_good_btn_container">
+                            <div class="one_good_btn">
+                                <a href="#" class="pay_btn">В корзину</a>
+                            </div>
+                            <div class="one_good_like">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="see_all_bottom">
+                <a href="/" class="see_all_bottom_link">Показать еще 10 шт</a>
+            </div>
+        </div>
+        <div class="one_good_container">
+            <div class="one_good_container_title">
+                <h3 class="one_good_title"><a name="custom_flowers"></a> Авторские букеты </h3>
                 <a href="/" class="see_all">Смотреть все</a>
             </div>
             <div class="one_good_options">
@@ -540,7 +644,7 @@
         </div>
         <div class="one_good_container">
             <div class="one_good_container_title">
-                <h3 class="one_good_title">Игрушки </h3>
+                <h3 class="one_good_title"><a name="toys"></a> Игрушки </h3>
                 <a href="/" class="see_all">Смотреть все</a>
             </div>
             <div class="one_good_options">
@@ -643,7 +747,7 @@
         </div>
         <div class="one_good_container">
             <div class="one_good_container_title">
-                <h3 class="one_good_title">Открытки </h3>
+                <h3 class="one_good_title"><a name="postcards"></a> Открытки </h3>
                 <a href="/" class="see_all">Смотреть все</a>
             </div>
             <div class="one_good_options">
@@ -777,6 +881,7 @@
     <div class="delivery_terms">
         <div class="delivery_terms_container">
             <div class="one_term">
+                <a name="delivery_option"></a>
                 <div class="one_term_title">Условия доставки</div>
                 <ul class="one_term_text">
                     <li>Доставка осуществляется день в день.</li>
@@ -802,6 +907,14 @@
                 </ul>
             </div>
             <div class="one_term">
+                <a name="self_delivery"></a>
+                <div class="one_term_title">Адрес самовывоза</div>
+                <ul class="one_term_text">
+                    <li>г. Минск, ул. Лобанка 81, вывеска цветы и подарки</li>
+                </ul>
+            </div>
+            <div class="one_term">
+                <a name="contacts_main"></a>
                 <div class="one_term_title">Основные</div>
                 <ul class="one_term_text">
                     <li>Телефон для заказа или уточнения информации: 80(29)813-17-61</li>
@@ -882,9 +995,9 @@
                 </ul>
             </div>
             <div class="one_term">
-                <div class="one_term_title">Способы оплаты</div>
+                <div class="one_term_title"><a name="payment_methods"></a> Способы оплаты</div>
                 <ul class="one_term_text">
-                    <li>+ Наличными</li>
+                    <li>+ Наличными при получении</li>
                     <li>+ Банковской картой<li>
                     <li>+ ЕРИП<li>
                     <li>+ Apple Pay<li>
